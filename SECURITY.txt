@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: https://hackerone.com/cloudflare
+
+# If you'd like to encrypt your message, please do so within the the body of the message.
+# Our email system doesn't handle PGP-MIME well.
+Contact: mailto:security@cloudflare.com
+
+# All abuse reports should be submitted to our Trust & Safety team through our dedicated page.
+Contact: https://www.cloudflare.com/abuse/
+
+Preferred-Languages: en
+
+Encryption: https://www.cloudflare.com/gpg/security-at-cloudflare-pubkey-06A67236.txt
+Canonical: https://www.cloudflare.com/.well-known/security.txt
+
+Policy: https://www.cloudflare.com/disclosure
+
+# Search for Security :)
+Hiring: https://www.cloudflare.com/careers/jobs/
+
+Expires: Sat, 20 Mar 2021 13:24:05 -0700
+-----BEGIN PGP SIGNATURE-----
+
+iQJMBAEBCAA2FiEEDnvvEuWaqyVBavSjIi/eggamcjYFAl51JmUYHHNlY3VyaXR5
+QGNsb3VkZmxhcmUuY29tAAoJECIv3oIGpnI2RFcP/iT8SQ+QQKYIcVhmA0Ro06FA
+6dSMr8EPX/aMJ2AfOB+umhEDQeY+QnFd9PaBTPrHZeeoXcp6+DsukYWo+4qR697x
+Tif+p2IS87DHaR7QaA5x4H7yjV5d8cX7qJIYVkQUQ28jvQIK/q703Y/2iP9tCa+2
+vLA7VsU/H2kovFFnuZX1WGuVhmoqVPJ+q29yhNs7+SshZ59+l/Sfw9Cbbk8PvGfe
+FYdEL4Kkn+ZimePTulLKhLYgzout2IMVQ4p6ClrDDhOQtv4bYnaS01YduMHdKukD
+rDeWflQTRQltTBv35pGG/nnmRZ2ZJQBiNC1v1peKxTlRBMjoFsljeW2/9G5MpBuZ
+sO/Rw1ZS60m0ClPgBpg+fyRuDC8UimTPoy7khjdyOZYlk8VWl2DWtH5j/KXdorWY
+rWxn3mxZWUjyokDcXzQWL+2NRnYI/lNAEMsf8t7c+sgYTYSawaQGOP2m0ENrRf7j
+Xqw4SQtoaC49qEMgZDR0G2lYo3NSSrNiNrdQy208pE5Vv/qEqzfWdyGzVfXlEC4J
+x3Edl2x1PAsEpV2l+rE0v2Rer3oPdObOPXhjG+IBvmf15R/ZAttd5ZUsoUzNVuCe
+i1Ifh7GBtx1FUPjCQ55ijpa9Z+qelRXvIN0webhxNjufrhDyhZDcyg8BRq0N3pV6
+asvDZc1SKq9jVv9OsfUI
+=1a93
+-----END PGP SIGNATURE-----
