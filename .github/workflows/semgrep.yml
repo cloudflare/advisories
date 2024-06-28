@@ -21,7 +21,7 @@ jobs:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
       SEMGREP_APP_URL: https://cloudflare.semgrep.dev
     container:
-      image: semgrep/semgrep
+      image: returntocorp/semgrep
     if: (github.actor != 'dependabot[bot]')
     steps:
       - uses: actions/checkout@v4
