@@ -3,7 +3,7 @@ name: Reusable worfklow with Semgrep
 on:
   workflow_call:
     secrets:
-      token: 
+      SEMGREP_APP_TOKEN: 
         required: true
   workflow_dispatch: {}
   pull_request: {}
