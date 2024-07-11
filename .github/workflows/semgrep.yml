@@ -17,6 +17,18 @@ on:
     # random HH:MM to avoid a load spike on GitHub Actions at 00:00
     - cron: '44 8 * * *'
 jobs:
+  pass-secret-to-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pass the received secret to an action
+        uses: ./.github/actions/checkout@v4
+        with:
+          token: ${{ secrets.SEMGREP_APP_TOKEN }}
+
+  pass-secret-to-workflow:
+      uses: ./.github/workflows/semgrep.yml
+      secrets:
+       token: ${{ secrets.SEMGREP_APP_TOKEN}}
   semgrep:
     name: semgrep/ci
     runs-on: ubuntu-latest
