@@ -2,6 +2,9 @@ name: Reusable workflow with Semgrep
 
 on:
  workflow_call:
+
+permissions:
+ contents: read
    
 jobs:
   semgrep:
