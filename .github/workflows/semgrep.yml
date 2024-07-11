@@ -1,33 +1,22 @@
-name: Reusable worfklow with Semgrep
+name: Reusable workflow with Semgrep
 
 on:
-  workflow_call:
-    secrets:
-      SEMGREP_APP_TOKEN:
-        required: false
-  workflow_dispatch: {}
-  pull_request: {}
-  push:
-    branches:
-      - main
-      - master
-    paths:
-      - .github/workflows/semgrep.yml
-  schedule:
-    # random HH:MM to avoid a load spike on GitHub Actions at 00:00
-    - cron: '44 8 * * *'
+ workflow_call:
+   
 jobs:
   semgrep:
-    name: semgrep/ci
+    name: Semgrep Scan
     runs-on: ubuntu-latest
-    env:
-      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
-      SEMGREP_URL: https://cloudflare.semgrep.dev
-      SEMGREP_APP_URL: https://cloudflare.semgrep.dev
-      SEMGREP_VERSION_CHECK_URL: https://cloudflare.semgrep.dev/api/check-version
+
     container:
       image: returntocorp/semgrep:latest
+      
     if: (github.actor != 'dependabot[bot]')
+
     steps:
       - uses: actions/checkout@v4
       - run: semgrep ci
+        env:
+          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
+
+    
