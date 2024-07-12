@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: returntocorp/semgrep:latest
+      image: semgrep/semgrep
       
     if: (github.actor != 'dependabot[bot]')
 
