@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: semgrep ci
+      - run: semgrep scan --config=auto
         env:
           SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
           SEMGREP_URL: https://cloudflare.semgrep.dev
